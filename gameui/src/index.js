@@ -15,8 +15,8 @@ import AppComponent from "./components/AppComponent.js";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<AppComponent />}>
-      <Route index element={<div><Battlefields /></div>} />
-      <Route path="battlefield" element={<Battlefields />} />
+      {/* <Route index element={<div><Battlefields /></div>} /> */}
+      <Route path="/battlefield" element={<Battlefields />} />
     
     </Route>
   )
