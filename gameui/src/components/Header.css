@@ -1,0 +1,44 @@
+ 
+  .server-header {
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .header-info{
+    margin-bottom: 5.1rem;
+    font-size: 2rem;
+    
+  }
+  .header-title{
+      font-size: 1.5rem;
+  }
+.header-details, .description{
+    font-size: 0.7em;
+  }
+ 
+  .actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .actions button {
+    padding: 0.9rem 2.7rem;
+    font-size: 0.8em;
+    border: 0.5px solid rgb(86, 78, 78);
+    /* border-radius: 5px; */
+    background-color: #44444400;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .actions button:hover{
+    background-color: #fff;
+    color: black;
+  }
+  .score{
+    padding: 0.8rem 2.4rem;
+  }
+ 
+ 

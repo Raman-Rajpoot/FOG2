@@ -1,0 +1,126 @@
+/* Player Navbar Container */
+.player-navbar {
+    position: fixed;
+    top: 0;
+    right: 2px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    width: 62px; /* Initial width */
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+    /* border-left: 2px solid rgba(255, 255, 255, 0.2); */
+    z-index: 10; /* Ensure it stays above other elements */
+  }
+  
+  .player-navbar:hover {
+    width: 200px; /* Expand width on hover */
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Top Button */
+  .top-button {
+    background-color: #383737b3;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 0.4rem;
+    margin-left: 0;
+    /* padding-left: 0; */
+    text-align: start;
+    cursor: pointer;
+    transition: all 0.1s ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Initial compact width */
+  }
+  
+  .top-button::before {
+    content: "+";
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .player-navbar:hover .top-button {
+    width: auto;
+    padding: 10px 25px;
+   
+  }
+  
+  .player-navbar:hover .top-button::before {
+    content: "ADD_SQUAD";
+    font-size: 0.9rem;
+    padding: 10px 3px;
+  }
+  .top-button:hover{
+    background-color: #fff;
+    color: black;
+  }
+  /* Player Card */
+  .player-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 10px;
+    padding: 10px;
+    transition: all 0.1s ;
+    width: 100%;
+  }
+  .player-card:hover{
+    background-color: #fff;
+    color: black;
+  } 
+  /* Avatar Styling */
+  .player-avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+  }
+  
+  /* Adjust avatar position when navbar is hovered */
+  .player-navbar:hover .player-avatar {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Player Info */
+  .player-info {
+    flex: 1;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .player-navbar:hover .player-info {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Player Name and Status */
+  .player-name {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .player-status {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  .player-card:hover .player-name{
+    color: black;
+  }
+  .player-status.online {
+    color: #70da56; /* Green for online */
+  }
+  
+  .player-status.offline {
+    color: #ff0000; /* Red for offline */
+  }
+  

@@ -1,0 +1,49 @@
+.settings-container {
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2.7rem;
+  }
+  
+  .category {
+    flex: 1 1 30%;
+    padding: 15px;
+    min-width: 250px;
+    box-sizing: border-box;
+  }
+  
+  .category h4 {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .category p {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+    letter-spacing: 0.1em;
+    font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    line-height: 2;
+    border-bottom: 1px solid rgba(72, 72, 72, 0.507);
+    padding: 0.6rem 0.3rem; 
+    margin: 0; 
+    position: relative; 
+    overflow: hidden; 
+    transition: background-color 0.1s , color 0.1s ;
+  }
+  
+  .category p:hover {
+    color: black;
+    background-color: #ffffff;
+    width: 100%;  
+  }
+  
+  @media (max-width: 768px) {
+    .category {
+      flex: 1 1 100%; /* Full width on smaller screens */
+    }
+  }
+  
