@@ -11,7 +11,7 @@ const app = express();
 // Middleware to enable CORS
 
 const corsOptions = {
-    origin: "https://fronted-510a.onrender.com/", // Allow this origin
+    origin: "https://fronted-510a.onrender.com", // Allow this origin
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
     credentials: true, // Allow cookies and authentication headers
   };
